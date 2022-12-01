@@ -1,17 +1,21 @@
-function lifeInWeeks(age){
+function lifeInWeeks(age) {
     
 /************Don't change the code above************/    
     
     //Write your code here.
-    //Supposing we are taking 120 as the full ripe age
+    var daysLeft;
+    var weeksLeft;
+    var monthsLeft;
     
-    var ageRemaining = 120 - age;
-    var days = ageRemaining * 365;
-    var weeks = ageRemaining * 52;    
-    var months = ageRemaining * 12;
-
-    console.log("You have " + days + " days, " + weeks + " weeks and " + months + " months left.");
-     
+    daysLeft= (90 - age) * 365;
+    weeksLeft= (90 - age) * 52;
+    monthsLeft= (90 - age) * 12;
+    
+    console.log("You have " + daysLeft + " days, " + weeksLeft + " weeks, and " + monthsLeft + " months left.");
+    
+    
+    
 /*************Don't change the code below**********/
 }
-lifeInWeeks( age = prompt("How old are you?"));
+
+lifeInWeeks(89);
